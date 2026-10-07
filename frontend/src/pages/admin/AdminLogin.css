@@ -1,0 +1,16 @@
+.admin-login-page {
+  min-height: 100vh;
+}
+
+.admin-login-container {
+  min-height: 100vh;
+}
+
+.admin-login-card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.admin-login-error {
+  color: red;
+}

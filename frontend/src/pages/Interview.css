@@ -1,0 +1,156 @@
+.interview-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+/* HEADER */
+
+.interview-header {
+  height: 70px;
+  padding: 0 5%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.interview-header h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.interview-header-status {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.timer {
+  color: #374151;
+}
+
+/* MAIN */
+
+.interview-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+/* CAMERA */
+
+.camera-box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #111827;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.camera-error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.camera-error p {
+  margin-bottom: 20px;
+  color: #fca5a5;
+}
+
+.camera-error button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* STATUS */
+
+.interview-status {
+  margin-top: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.interview-status h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.interview-status p {
+  color: #6b7280;
+}
+
+.recording {
+  font-weight: 700;
+}
+
+/* END BUTTON */
+
+.end-button {
+  position: relative;
+  z-index: 9999;
+  display: block;
+  margin: 25px auto 40px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  background: #dc2626;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.end-button:hover {
+  background: #b91c1c;
+}
+
+.end-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .interview-container {
+    padding: 0 15px;
+    margin: 25px auto;
+  }
+
+  .camera-box {
+    height: 350px;
+  }
+
+  .interview-header {
+    padding: 0 20px;
+  }
+
+  .interview-header-status {
+    gap: 8px;
+    font-size: 13px;
+  }
+}

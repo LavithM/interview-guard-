@@ -1,0 +1,1 @@
+face_detected,face_presence_percentage,gaze,blink,yaw,pitch,roll,lip_movement,audio_level,speech_detected,dtw_distance,lip_audio_alignment,maximum_person_count,person_count_above_one,mobile_phone_detected,mobile_phone_detections,word_count,sentence_count,filler_word_count,average_words_per_sentence,label
